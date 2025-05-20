@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  json-server:
+    image: myimage
+    build: .
+    command: json-server -p 4200 -w /config/db.json
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./config:/config
+    restart: always

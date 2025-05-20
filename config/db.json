@@ -1,0 +1,23 @@
+{ 
+  "transactions": [
+    {
+      "id": "txn_00001",
+      "product": "Remera Roja XL",
+      "grossAmount": 492.2,
+      "netAmount": 280.07,
+      "paymentMethod": "qr",
+      "transactionDate": "2025-03-22T02:41:07.164Z"
+    },
+    {
+      "id": "txn_00002",
+      "product": "Cargador Negra USB-C PD",
+      "grossAmount": 309.31,
+      "netAmount": 206.36,
+      "paymentMethod": "wire_transfer",
+      "transactionDate": "2024-09-27T06:21:58.599Z",
+      "details": {
+        "cbu": "0123456789012345678901"
+      }
+    }
+  ]
+}
