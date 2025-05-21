@@ -1,0 +1,14 @@
+<div class="row m-0">
+    <div class="col" [style]="{position: 'relative'}">
+        <input type="text" [formControl]="autocompleteControl" class="autocomplete">
+
+        @let autocompleteOptions = options();
+        @if( autocompleteOptions.length ){
+            <ul class="options-container">
+                @for (option of autocompleteOptions; track option ; let last = $last) {
+                    <li (click)="onSelectedItem(option)" [style]="{padding: '5px 10px', cursor: 'pointer' , borderBottom: (last === false) ? '1px solid gray' : 'none'}">{{ option.product }}</li>
+                }
+            </ul>
+        }
+    </div>
+</div>
